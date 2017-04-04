@@ -1,0 +1,104 @@
+/////////////////////////////////////////
+//SMOOTH SCROLL
+////////////////////////////////////////
+
+
+//Home button////////////////////////////
+$('.home-nav').on('click', function(b) {
+	$('html, body').animate({
+          scrollTop: $("#home").offset().top
+        }, 1000);
+});
+
+//About button///////////////////////////
+$('.about-nav').on('click', function(b) {
+	$('html, body').animate({
+          scrollTop: $("#about").offset().top
+        }, 800);
+});
+
+//Work button/////////////////////////////
+$('.work-nav').on('click', function(b) {
+	$('html, body').animate({
+          scrollTop: $("#work").offset().top
+        }, 800);
+});
+
+//Reel button/////////////////////////////
+$('.reel-nav').on('click', function(b) {
+	$('html, body').animate({
+          scrollTop: $("#reel").offset().top
+        }, 800);
+});
+
+//Contact button/////////////////////////////
+$('.footer-nav').on('click', function(b) {
+	$('html, body').animate({
+          scrollTop: $("#footer").offset().top
+        }, 800);
+});
+
+
+/////////////////////////////////////////
+//FADE IN
+////////////////////////////////////////
+
+$(function() {
+    $(window).scroll( function(){
+    
+       
+        $('.fadeInBlock').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+            bottom_of_window = bottom_of_window + 200;  
+          
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                // $(this).animate({'translateY' : '-50px'})
+                    
+            }
+        }); 
+    
+    });
+});
+    $('nav a').on('click', function(){
+      if ($(window).width() <= 645) {
+        $('nav').slideToggle();
+        $('.cross').hide();
+        $('.hamburger').show();
+       }
+    });
+  // HAMBURGER MENU
+ 
+  $(".hamburger").on('click', function(){
+    $('nav').slideToggle();
+    $(this).hide();
+    $('.cross').show();
+  });
+
+  $('.cross').on('click', function(){
+    $('nav').slideToggle();
+    $(this).hide();
+    $('.hamburger').show();
+  });
+
+
+// $( ".cross" ).hide();
+// $( "nav" ).hide();
+// $( ".hamburger" ).click(function() {
+// $( ".menu" ).slideToggle( "slow", function() {
+// $( ".hamburger" ).hide();
+// $( ".cross" ).show();
+// });
+// });
+
+// $( ".cross" ).click(function() {
+// $( "nav" ).slideToggle( "slow", function() {
+// $( ".cross" ).hide();
+// $( ".hamburger" ).show();
+// });
+// });

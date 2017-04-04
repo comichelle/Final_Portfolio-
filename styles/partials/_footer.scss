@@ -1,0 +1,191 @@
+//------------------
+//    FOOTER 
+//------------------
+footer {
+	margin: 8% 0; 
+	padding: 5% 0;
+}
+
+.contact {
+	display: flex;
+	flex-direction: row;
+	padding: 0 5%;
+}
+
+.contact-info {
+	width: 60%;
+	text-align: left;
+	p {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+	a.email {
+		color: $textgrey;
+		font-size: 0.9rem;
+	}
+	h2 {
+		margin: 0;
+		margin-bottom: 10%;
+	}
+	.social-media {
+		display: flex;
+		flex-direction: row;
+		// justify-content: center;
+		margin-top: 40px;
+		.icon {
+			color: $darkgrey;
+			padding: 0 10px;
+			font-size: 1.2rem;
+		}
+		.icon:first-child {
+			padding-left: 0;
+		}
+
+		.icon a {
+			color: $textgrey;
+			outline: none;
+			border: none;
+			text-decoration: none;
+		}
+		.icon a:hover {
+			transition: color 0.2s ease-in-out;
+			color: $pink;
+		}
+		.icon a svg {
+			padding-top: 7px;
+			width: 30px;
+			height: 19px;
+		}
+		.icon a svg:hover #i,
+		 .icon a svg:hover #m, 
+		 .icon a svg:hover #d, 
+		 .icon a svg:hover #b{
+		 	transition: 200ms;
+		 	 transition-timing-function: ease-in-out;
+		 	 -webkit-transition: 200ms;
+		 	 -webkit-transition-timing-function: ease-in-out;
+			fill: $pink;
+		}
+		
+	}	
+}
+
+
+//------------------
+//      FORM 
+//------------------
+
+.form {
+	margin-left: 10%;
+	width: 100%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-size: 14px;
+	input, select, textarea {
+   	 color: $textgrey;
+   	 background: inherit;
+	}
+	input {
+		border: none;
+		border-bottom: 1px solid $textgrey;
+		margin-bottom: 30px;
+		outline: none;
+	}
+	textarea{
+		border: none;
+		border-bottom: 1px solid $textgrey;
+		margin-bottom: 30px;
+		height: 100px;
+		outline: none;
+		background: inherit;
+	}
+	input.button {
+		margin: 0;
+		border: 2px solid $pink;
+		background-color: inherit;
+		width: 100px;
+		color: $pink;
+		padding: 10px; 
+	}
+	input.button:hover {
+		transition: background-color 0.2s ease-in-out;
+		color: $white;
+		background-color: $pink;
+		outline: none;
+	}
+}
+
+//---------------------
+// FOOTER COPYRIGHT
+//---------------------
+
+.footer-copyright {
+	background-color: #f2f1f9;
+	padding: 0.5% 0;
+}
+
+.footer-copyright p {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
+
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+
+@media (max-width: 700px) {
+	.contact {
+		flex-direction: column;
+		padding: 0 5%;
+	}
+
+	//------------------
+	//      FORM 
+	//------------------
+
+	.form {
+		margin-left: 0%;
+		margin-top: 10%;
+		width: 100%;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		font-size: 14px;
+	}
+
+	//CONTACT
+
+	.contact-info {
+		width: 100%;
+		padding: 0 30px;
+		text-align: center;
+		p {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		a.email {
+			color: $textgrey;
+			font-size: 0.9rem;
+		}
+		h2 {
+			margin: 0;
+			margin-bottom: 5%;
+		}
+		.social-media {
+			justify-content: center;
+		}	
+	}
+
+}
+

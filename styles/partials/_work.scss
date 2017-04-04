@@ -1,0 +1,683 @@
+.top {
+	padding-top: 120px;
+}
+
+.portfolio {
+	margin: 0;
+	padding: 15px 0;
+}
+
+h4 {
+	color: $white;
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-size: 1.2rem;
+	margin: 0;
+}
+img{
+	width: 100%;
+	display: block;
+	// opacity: 0.9;
+}
+
+
+//////////////////////////////
+//	  DEVELOPMENT/3D/VFX
+//////////////////////////////
+
+.portfolio-container {
+	display: flex;
+	flex-direction: row;
+	//Work Description Here
+	.text-container {
+	width: 25%;
+	padding-left: 0;
+	margin-top: 150px;
+	margin-right: 70px;
+		span{
+			color: $textgrey;
+			border-bottom: 3px solid $pink;
+		}
+		h2{
+			letter-spacing: 0.5px;
+			margin: 0;
+			padding-bottom: 10px;
+			font-size: 1.5rem;
+			text-align: right;
+		}
+		p {
+			text-align: right;
+		}
+	}
+	//Portfolio Pieces Here
+	.work-container {
+		display: flex;
+		flex-direction: row;
+		.overlay {
+		opacity: 0;
+		background-color: rgba(0,0,0,0.6);
+		text-transform: uppercase;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 0 30px;
+		display: flex;
+		flex-direction: column;
+		}
+		.overlay:hover {
+			opacity: 1;
+			-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+			transition: opacity 0.8s, transform 0.8s;
+		}
+		.overlay-container {
+			width: 90%;
+			margin: auto;
+
+		}
+		.overlay p a.brian {
+			color: white;
+			text-decoration: underline;
+			border: none;
+			padding: 0;
+			margin: 0;
+			outline: none;
+		}
+		.overlay p a.brian:hover {
+			color: $pink;
+			background-color: inherit;
+			outline: none;
+		}
+		.overlay a {
+			opacity: 1;
+			color: $white;
+			font-size: 0.6rem;
+			padding: 10px 20px;
+			border: 1px solid $pink;
+			text-decoration: none;
+			cursor: pointer;
+			outline: none;
+		}
+		.overlay a:hover {
+			transition: background-color 0.2s ease-in-out;
+			color: $white;
+			font-size: 0.6rem;
+			background-color: $pink;
+			border: none;
+			outline: none;
+		}
+		p{
+			color: white;
+			line-height: 18px;
+			text-align: center;
+			font-size: 0.65rem;
+			margin-bottom: 30px;
+			letter-spacing: 0.5px;
+		}
+		.image-top {
+			overflow: hidden;
+		}
+		.image-bottom {
+			overflow: hidden;
+		}
+		//Column Left//
+		.images-left {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			padding: 0;
+			.image-top {
+				position: relative;
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+			.image-bottom {
+				position: relative;
+				margin-right: 10px;
+				margin-top: 10px;
+			}
+		}
+		//Column Right//
+		.images-right {
+			display: flex;
+			flex-direction: column;
+			.image-top {
+				position: relative;
+				margin-left: 10px;
+				margin-bottom: 10px;
+			}
+			.image-bottom {
+				position: relative;
+				margin-left: 10px;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+
+//////////////////////////////
+//	        DESIGN
+//////////////////////////////
+
+.design-container {
+	display: flex;
+	flex-direction: row-reverse;
+	
+	//Work Description Here
+	.text-container {
+	width: 34%;
+	padding-left: 0;
+	margin-top: 150px;
+	margin-left: 70px;
+		span{
+			color: $textgrey;
+			border-bottom: 3px solid $pink;
+		}
+		h2{
+			letter-spacing: 0.5px;
+			margin: 0;
+			padding-bottom: 10px;
+			font-size: 1.5rem;
+			text-align: left;
+		}
+		p {
+			text-align: left;
+			letter-spacing: -0.1px;
+		}
+	}
+
+	//Portfolio Pieces Here
+	.work-container {
+		display: flex;
+		flex-direction: row;
+		.overlay {
+		opacity: 0;
+		background-color: rgba(0,0,0,0.6);
+		text-transform: uppercase;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 0 30px;
+		display: flex;
+		flex-direction: column;
+		}
+		.overlay:hover {
+			opacity: 1;
+			-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+			transition: opacity 0.8s, transform 0.8s;
+		}
+		.overlay-container {
+			width: 90%;
+			margin: auto;
+
+		}
+		.overlay a {
+			opacity: 1;
+			color: $white;
+			font-size: 0.6rem;
+			padding: 10px 20px;
+			border: 1px solid $pink;
+			text-decoration: none;
+			cursor: pointer;
+			outline: none;
+		}
+		.overlay a:hover {
+			transition: background-color 0.2s ease-in-out;
+			color: $white;
+			font-size: 0.6rem;
+			background-color: $pink;
+			border: none;
+			outline: none;
+		}
+		p{
+			color: white;
+			line-height: 18px;
+			text-align: center;
+			font-size:0.65rem;
+			margin-bottom: 20px;
+			letter-spacing: 0.5px;
+		}
+
+		.image-top {
+			overflow: hidden;
+		}
+		.image-bottom {
+			overflow: hidden;
+		}
+		//Column Left//
+		.images-left {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			padding: 0;
+			.image-top {
+				position: relative;
+				margin-right: 20px;
+				margin-bottom: 10px;
+			}
+			.image-middle {
+				position: relative;
+				margin-right: 20px;
+				margin-top: 8px;
+				margin-bottom: 8px;
+			}
+			.image-bottom {
+				position: relative;
+				margin-right: 20px;
+				margin-top: 8px;
+			}
+		}
+		//Column Right//
+		.images-right {
+			display: flex;
+			flex-direction: column;
+			.image-top {
+				position: relative;
+				margin-bottom: 10px;
+			}
+			.image-bottom {
+				position: relative;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+@media (max-width: 1180px) {
+
+
+}
+
+@media (max-width: 1098px) {
+	.portfolio-container, .design-container  {
+		padding-right: 20px;
+	}
+	
+}
+
+@media (max-width: 950px) {
+	.design-container {
+		//Work Description Here
+		.text-container {
+		width: 36%;
+		margin-left: 70px;
+		}
+
+		//Portfolio Pieces Here
+		.work-container {
+			//Column Left//
+			.images-left {
+				.image-top {
+					margin-right: 20px;
+				}
+				.image-middle {
+					margin-right: 20px;
+				}
+				.image-bottom {
+					margin-right: 20px;
+				}
+			}
+			//Column Right//
+			.images-right {
+				display: flex;
+				flex-direction: column;
+				.image-top {
+					margin-left: 5px;
+				}
+				.image-bottom {
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+
+
+}
+
+@media (max-width: 850px) {
+	.top {
+		padding-top: 80px;
+	}
+
+	.design-container {
+		display: flex;
+		flex-direction: column;
+		//Work Description Here
+		.text-container {
+			width: 100%;
+			margin-top: 60px;
+			margin-left: 0px;
+			h2{
+				text-align: center;
+			}
+			p {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+		}
+
+		//Portfolio Pieces Here
+		.work-container {
+			.overlay {
+				opacity: 0.8;
+			}
+			.overlay:hover {
+				opacity: 0.8;
+			}
+
+			//Column Left//
+			.images-left {
+				.image-top {
+					margin: 0;
+				}
+				.image-middle {
+
+					margin: 0;
+				}
+				.image-bottom {
+					margin: 0;
+				}
+			}
+			//Column Right//
+			.images-right {
+				display: flex;
+				flex-direction: column;
+				.image-top {
+					margin-left: 0;
+					margin-bottom: 0;
+				}
+				.image-bottom {
+					margin-left: 0;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+
+
+
+	.portfolio-container {
+		display: flex;
+		flex-direction: column;
+		//Work Description Here
+		.text-container {
+		width: 100%;
+		margin-top: 60px;
+			h2{
+				text-align: center;
+			}
+			p {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+		}
+
+		//Portfolio Pieces Here
+		.work-container {
+			.overlay {
+				opacity: 0.8;
+			}
+			.overlay:hover {
+				opacity: 0.8;
+			}
+			.overlay a {
+				background-color: $pink;
+			}
+			.overlay p a.brian {
+				background-color: inherit;
+			}
+			.overlay p a.brian:hover {
+			color: $pink;
+			background-color: inherit;
+			}
+			.image-top {
+				overflow: hidden;
+			}
+			.image-bottom {
+				overflow: hidden;
+			}
+			//Column Left//
+			.images-left {
+				.image-top {
+					margin: 0;
+
+				}
+				.image-bottom {
+					margin: 0;
+
+				}
+			}
+			//Column Right//
+			.images-right {
+				.image-top {
+					margin: 0;
+				}
+				.image-bottom {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.design-container {
+		display: flex;
+		flex-direction: column;
+		//Work Description Here
+		.text-container {
+			width: 100%;
+			margin-top: 60px;
+			margin-left: 0px;
+			h2{
+				text-align: center;
+			}
+			p {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+		}
+
+		//Portfolio Pieces Here
+		.work-container {
+			//Column Left//
+			.images-left {
+				.image-top {
+					margin: 0;
+				}
+				.image-middle {
+					margin: 0;
+					margin: 0;
+				}
+				.image-bottom {
+					margin: 0;
+				}
+			}
+			//Column Right//
+			.images-right {
+				display: flex;
+				flex-direction: column;
+				.image-top {
+					margin: 0;
+					margin: 0;
+				}
+				.image-bottom {
+					margin: 0;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+
+
+
+	.portfolio-container {
+		display: flex;
+		flex-direction: column;
+		//Work Description Here
+		.text-container {
+		width: 100%;
+		margin-top: 60px;
+			h2{
+				text-align: center;
+			}
+			p {
+				text-align: center;
+				margin-bottom: 40px;
+			}
+		}
+
+		//Portfolio Pieces Here
+		.work-container {
+			.image-top {
+				overflow: hidden;
+			}
+			.image-bottom {
+				overflow: hidden;
+			}
+			//Column Left//
+			.images-left {
+				.image-top {
+					margin: 0;
+				}
+				.image-bottom {
+					margin: 0;
+				}
+			}
+			//Column Right//
+			.images-right {
+				.image-top {
+					margin: 0;
+				}
+				.image-bottom {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 625px) {
+	.design-container {
+		display: flex;
+		flex-direction: column;
+		padding-right: 0px;
+		//Work Description Here
+		.text-container {
+			width: 100%;
+			padding: 0 30px;
+			margin-top: 60px;
+			h2{
+				text-align: center;
+			}
+			p {
+				text-align: center;
+			margin-bottom: 0px;
+			}
+		}
+
+		//Portfolio Pieces Here
+		.work-container {
+			display: flex;
+			flex-direction: column;
+			//Column Left//
+			.images-left {
+				.image-top {
+					margin-right: 0;
+					margin-top: 60px;
+					margin-bottom: 0;
+				}
+				.image-middle {
+					margin-right: 0;
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+				.image-bottom {
+					margin-top: 0;
+					margin-bottom: 0;
+					margin-right: 0;
+				}
+			}
+			//Column Right//
+			.images-right {
+				display: flex;
+				flex-direction: column;
+				.image-top {
+					margin-left: 0;
+					margin-bottom: 0;
+				}
+				.image-bottom {
+					margin-left: 0;
+					margin-top: 0;
+				}
+			}
+		}
+		.portfolio-container, .design-container  {
+			padding-right: 0;
+		}
+	}
+
+	.portfolio-container {
+		display: flex;
+		flex-direction: column;
+		padding-right: 0;
+		//Work Description Here
+		.text-container {
+		width: 100%;
+		margin-top: 60px;
+		padding: 0 30px;
+			h2{
+				text-align: center;
+			}
+			p {
+				text-align: center;
+				margin-bottom: 5%;
+			}
+		}
+
+		//Portfolio Pieces Here
+		.work-container {
+			display: flex;
+			flex-direction: column;
+			//Column Left//
+			.images-left {
+				margin: 0;
+				padding: 0;
+				.image-top {
+					margin-right: 0;
+					margin-bottom: 0;
+				}
+				.image-bottom {
+					margin-right: 0;
+					margin-top: 0;
+				}
+			}
+			//Column Right//
+			.images-right {
+				.image-top {
+					margin-left: 0;
+					margin-bottom: 0;
+				}
+				.image-bottom {
+
+					margin-left: 0;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+}

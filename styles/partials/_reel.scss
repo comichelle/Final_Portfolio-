@@ -1,0 +1,172 @@
+//************************
+//		  VIDEO
+//************************
+
+#reel {
+	margin-top: 10%; 
+	background: linear-gradient(#f2f1f9 60%, $bodygrey 30%);
+	height: 600px;
+}
+
+
+.demo-reel {
+	padding: 0;
+	display: block;
+	width: 80%;
+ 	margin: 0 auto;
+ 	border: none;
+ 	box-shadow: -15px 25px 30px 0px rgba(0,0,0,0.5);
+ 	color: $pink;
+ 	margin-top: 50px;
+ 	z-index: 999;
+}
+
+
+
+// Customized video interface
+
+video {
+	margin-top: -11.5px;
+	margin-bottom: -17px;
+	width: 100%;
+	height: 100%;
+}
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); 
+    background-color: transparent;
+    margin-top: -10px;
+}
+
+
+//************************
+//		ICONS
+//************************
+
+.movie-connect{
+	margin-top: 100px;
+}
+
+.movie-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	.imdb {
+		border: 4px solid $pink; 
+		width: 122.86px;
+		height: 132px;
+		margin: 0 2%;
+		cursor: pointer;
+
+	}
+	.imdb img {
+		width: 80px;
+		margin: 45px 20px;
+	}
+	.vimeo:hover {
+
+	}
+
+	.vimeo {
+		margin: 0 2%;
+		cursor: pointer;	
+	}
+	.vimeo i {
+		font-size: 4rem;
+		color: $pink;
+		border: 4px solid $pink;
+		padding: 30px;
+	}
+}
+ 
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+@media (max-width: 930px) {
+	#reel {
+		background: linear-gradient(#f2f1f9 50%, $bodygrey 30%);
+		height: 600px;
+	}
+
+
+}
+
+@media (max-width: 790px) {
+	#reel {
+		background: linear-gradient(#f2f1f9 45%, $bodygrey 30%);
+		height: 550px;
+	}
+}
+
+@media (max-width: 640px) {
+	#reel {
+		background: linear-gradient(#f2f1f9 40%, $bodygrey 30%);
+		height: 500px;
+	}
+}
+
+
+@media (max-width: 580px) {
+	#reel {
+		background: linear-gradient(#f2f1f9 35%, $bodygrey 30%);
+		height: 450px;
+	}
+	.demo-reel {
+		width: 90%;
+	}
+
+}
+
+@media (max-width: 455px) {
+	#reel {
+		background: linear-gradient(#f2f1f9 20%, $bodygrey 30%);
+		height: 400px;
+	}
+	.demo-reel {
+		width: 95%;
+	}
+	
+}
+
+@media (max-width: 410px) {
+	#reel {
+		background: linear-gradient(#f2f1f9 10%, $bodygrey 20%);
+		height: 350px;
+	}
+}
+
+@media (max-width: 390px) {
+	#reel {
+		background: linear-gradient(#f2f1f9 10%, $bodygrey 20%);
+		height: 300px;
+	}
+
+	.demo-reel {
+ 	margin-top: 30px;
+
+	}
+}
+
+@media (max-width: 365px) {
+	#reel {
+		background: linear-gradient(#f2f1f9 10%, $bodygrey 20%);
+		height: 300px;
+	}
+
+	.demo-reel {
+ 	margin-top: 20px;
+
+	}
+}

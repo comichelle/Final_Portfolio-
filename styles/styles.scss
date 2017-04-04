@@ -1,0 +1,137 @@
+@import "partials/variables";
+@import "partials/setup";
+@import "partials/header";
+@import "partials/about";
+@import "partials/services";
+@import "partials/work";
+@import "partials/reel";
+@import "partials/footer";
+
+.wrapper {
+	max-width: $wrapperWidth;
+	margin: 0 auto;
+	// margin-left: 100px; //media queries
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	background-color: $bodygrey;
+	color: $darkgrey;
+}
+
+.fadeInBlock {
+    opacity:0;
+    transform: translateY(150px);
+  	animation: come-in 0.8s ease forwards;
+  	@keyframes come-in {
+  	  to { transform: translateY(0); }
+  	}
+}
+
+a {
+	outline: none;
+}
+
+
+
+ul {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+ul li p{
+	margin: 0;
+	text-decoration: none;
+}
+
+section {
+	width: 100%;
+	padding: 50px 0;
+
+}
+
+p {
+	color: $textgrey;
+	line-height: 15pt;
+	font-size: 0.8rem;
+	text-align: justify
+}
+
+h2 {
+	text-transform: uppercase;
+	color: $pink;
+}
+
+h3 {
+	margin: 25px 0;
+	color: $pink;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+
+section, header, footer {
+	display: block;
+}
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+@media (max-width: 1180px) {
+.wrapper {
+	max-width: $wrapperWidth;
+	margin: 0 auto;
+	margin-left: 80px; //media queries
+}
+
+}
+
+@media (max-width: 1098px) {
+
+	
+}
+
+@media (max-width: 950px) {
+
+
+}
+
+@media (max-width: 820px) {
+	
+}
+
+@media (max-width: 645px) {
+	.wrapper {
+		margin-left: 20px; //media queries
+	}
+
+	.heading {
+		padding-top: 170px;
+	}
+}
+
+@media (max-width: 625px) {
+ .wrapper {
+ 	margin-left: 0px; //media queries
+ }
+}
+
+@media (max-width: 580px) {
+
+	
+}
+
+@media (max-width: 455px) {
+
+	
+}
+
+@media (max-width: 410px) {
+	
+}
